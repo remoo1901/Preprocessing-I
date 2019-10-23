@@ -130,12 +130,18 @@ table {
 * {
   box-sizing: border-box;
 }
+.container {
+  text-align: center;
+  margin: 0 auto;
+}
 html,
 body {
   height: 100%;
+  max-width: 600px;
+  margin: auto;
 }
 .header1 {
-  background-color: #bea371;
+  background-color: #6ad6ef;
   width: 600px;
   height: 135px;
   margin-bottom: 10px;
@@ -143,11 +149,12 @@ body {
 h1 {
   font-size: 50px;
   text-align: left;
+  margin-left: 7px;
 }
 h3 {
   font-size: 16px;
   text-align: left;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .navigation {
   display: flex;
@@ -156,55 +163,165 @@ h3 {
   padding: 5px;
   width: 325px;
   height: 35px;
-  background-color: black;
+  background-color: #3b4d50;
   color: white;
   margin-left: 5px;
 }
-.about {
+.navigation .about {
   padding: 5px;
   border-right: 1px solid white;
 }
-.skills {
+.navigation .skills {
   padding: 5px;
   border-right: 1px solid white;
 }
-.education {
+.navigation .education {
   padding: 5px;
   border-right: 1px solid white;
 }
-.experience {
+.navigation .experience {
   padding: 5px;
   border-right: 1px solid white;
 }
-.contact {
+.navigation .contact {
   padding: 5px;
 }
 .me {
   border-radius: 20px 40px 10px;
   margin-left: 5px;
-  padding: 5px;
-  width: 100px;
+  padding: 7px;
+  width: 150px;
   height: 30px;
   text-align: center;
-  background-color: black;
+  background-color: #3b4d50;
   color: white;
+  font-weight: bold;
 }
 .info {
-  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
   margin-left: 5px;
+  text-align: center;
+  margin-top: 10px;
 }
 img {
-  width: 100px;
-  height: 150px;
-  margin-left: 100px;
+  width: 150px;
+  margin-left: 40px;
+  margin-bottom: 45px;
+  align-self: center;
+  margin-top: 25px;
 }
 .top-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 600px;
+  border-top: 3px solid #11aed1;
+  margin-top: 2px;
+  border-bottom: 3px solid #11aed1;
+  /*
+ .info {
+			display: flex;
+			flex-direction: column;
+			font-size: 13px;
+			margin-left: 5px;
+			text-align: center;
+			margin-top: 10px;
+		}
+*/
 }
-.info1 {
-  font-size: 12px;
-  width: 220px;
-  height: 150px;
+.top-section .me {
+  margin-top: 28px;
+  border-radius: 20px 40px 10px;
+  margin-left: 5px;
+  padding: 7px;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  background-color: #3b4d50;
+  color: white;
+  font-weight: bold;
+}
+.top-section .icon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  font-size: 15px;
+}
+.top-section .info1 {
+  font-size: 13px;
+  padding: 22px;
+  margin-top: 7px;
+}
+.bottom-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #3b4d50;
+  width: 600px;
+  height: 550px;
+}
+.bottom-section h4 {
+  border-radius: 20px 40px 10px;
+  margin-left: 5px;
+  padding: 6px;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  background-color: #11aed1;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.bottom-section ul {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 5px;
+  margin-left: 10px;
+  color: white;
+}
+.middle-section .circle {
+  width: 600px;
+  display: flex;
+  margin-left: -1px;
+  image-resolution: 200 dpi;
+  border-bottom: 3px solid #11aed1;
+}
+.middle-section .skills1 {
+  border-radius: 20px 40px 10px;
+  margin-left: 5px;
+  padding: 7px;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  background-color: #3b4d50;
+  color: white;
+  font-weight: bold;
+  margin-top: 15px;
+}
+@media (max-width: 500px) {
+  .bottom-section {
+    width: 100%;
+    height: 100%;
+  }
+  .info1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .me {
+    margin-left: 50px;
+  }
+  img {
+    margin-left: 10px;
+  }
+  .middle-section .circle {
+    width: 100%;
+  }
 }
