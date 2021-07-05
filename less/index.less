@@ -52,8 +52,292 @@ table {
 * {
     box-sizing: border-box;
 }
+@width: 120px;
 
-html, body {
-    height: 100%;
+.bordred {
+	padding: 5px;
+	border-right: 1px solid white;
 }
 
+.container {
+	text-align: center;
+	width: 600px;
+	margin: 0 auto;
+}
+
+html, body {
+	height: 100%;
+	max-width: 600px;
+	margin: auto;
+}
+
+.header1 {
+
+	background-color: #6ad6ef;
+	width: @width + 480px;
+	height: 135px;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-family: 'Acme', sans-serif;
+	font-size: 50px;
+	text-align: left;
+	margin-left: 7px;
+
+	@media (max-width: 31.25em){
+		font-size: 35px;
+	}
+}
+
+
+
+h3 {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-align: left;
+	margin-left: 10px;	
+
+	@media (max-width: 31.25em){
+		font-size: 15px;
+	}
+}
+
+
+.navigation {
+    display: flex;
+	justify-content: flex-start;
+	border-radius: 10px;
+	padding: 5px;
+	width: @width + 205px;
+	height: 35px;
+	background-color: #3b4d50;
+	color: white;
+	margin-left: 5px;
+	.about {
+		.bordred();
+	}
+	.skills {
+		.bordred();
+	}
+	.education {
+		.bordred();
+	}
+	.experience {
+		.bordred();
+	}
+	.contact {
+		padding: 5px;
+	
+	}
+}
+
+
+
+
+.me {
+	border-radius: 20px 40px 10px;
+	margin-left: 5px;
+	padding: 7px;
+	width: @width + 30px;
+	height: 30px;
+	text-align: center;
+	background-color: #3b4d50;
+	color: white;
+	font-weight: bold;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	font-size: 13px;
+	margin-left: 5px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+img {
+	width: @width + 30px;
+	margin-left: 40px;
+	margin-bottom: 45px;
+	align-self: center;
+	margin-top: 25px;
+	max-width: 100%;
+	
+	
+@media (max-width: 31.25em){
+	margin-left: 10px;
+ }	
+}
+
+.top-section {
+	    display: flex;
+	    justify-content: space-around;
+	   width: @width + 480px;
+	   border-top: 3px solid #11aed1;
+	    margin-top: 2px;
+	   border-bottom: 3px solid #11aed1;
+
+@media (max-width: 31.25em){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+}
+}
+
+  .me {
+	  margin-top: 28px;
+		border-radius: 20px 40px 10px;
+		margin-left: 5px;
+		padding: 7px;
+		width: @width + 30px;
+		height: 30px;
+		text-align: center;
+		background-color: #3b4d50;
+		color: white;
+		font-weight: bold;
+
+  @media (max-width: 31.25em){
+		margin-left: 5px;
+	}
+}
+/*
+ .info {
+			display: flex;
+			flex-direction: column;
+			font-size: 13px;
+			margin-left: 5px;
+			text-align: center;
+			margin-top: 10px;
+		}
+*/	
+		.icon {
+			display:flex;
+			justify-content: space-around;
+			margin-top: 15px;
+			font-size: 15px;
+		}
+		
+		.info1 {
+			
+			font-size: 13px;
+			padding: 22px;
+			margin-top: 7px;
+	
+		@media (max-width: 31.25em){
+				width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+
+
+
+
+.bottom-section {
+	display: flex;
+	flex-wrap: wrap;
+	background-color:  #3b4d50;
+	width: @width + 480px;
+	height: 550px;
+	padding: 10px;
+	margin-top: -15px;}
+
+	@media (max-width: 31.25em){
+			width: 100%;
+			height: 100%;	
+	}
+	
+
+	h4 {
+	
+		border-radius: 20px 40px 10px;
+		margin-left: 5px;
+		padding: 6px;
+		width: @width;
+		height: 30px;
+		text-align: center;
+		background-color: #11aed1;
+		color: white;
+		margin-bottom: 5px;
+		
+}
+    ul {
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 2px;
+	margin-right: 5px;
+	margin-left: 10px;
+	color: white;	
+}
+
+.middle-section {
+
+    .circle {
+		width: 600px;
+		display: flex;
+		margin-left: -1px;
+		image-resolution: 200 dpi;
+		border-bottom: 3px solid #11aed1;
+	}
+
+	@media (max-width: 31.25em){
+			width: 100%;
+		}
+
+	.skills1 {
+		border-radius: 20px 40px 10px;
+		margin-left: 5px;
+		padding: 7px;
+		width: @width + 30px;
+		height: 30px;
+		text-align: center;
+		background-color: #3b4d50;
+		color: white;
+		font-weight: bold;
+		margin-top: 15px;
+	}
+}
+
+
+
+/*
+@media (max-width: 500px){
+	
+.bottom-section {
+	width: 100%;
+	height: 100%;	
+}
+
+.info1 {
+	width: 100%;
+	margin-bottom: 20px;
+} 
+
+.top-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+} 
+
+.me {
+
+	margin-left: 50px;
+}
+
+
+
+img {
+
+	margin-left: 10px;
+}
+
+
+
+.middle-section .circle {
+	width: 100%;
+}
+}
+
+*/
